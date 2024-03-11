@@ -12,7 +12,7 @@ use std::str::FromStr;
 
 fn main() -> Result<(), Box<dyn Error>> {
     // Load configuration from config.json
-    let config_loc = "/root/Git/iroha/configs/peer/config.json";
+    let config_loc = "/root/Git/iroha/my_client/config.json";
     let file = File::open(config_loc).expect("Unable to load the configuration file");
     let config: Result<ClientConfiguration, serde_json::Error> =
         serde_json::from_reader(file);
