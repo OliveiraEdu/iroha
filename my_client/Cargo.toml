@@ -1,0 +1,16 @@
+[package]
+name = "my_client"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+iroha_client = { version = "=2.0.0-pre-rc.9", path = "../client" }
+iroha_data_model = { version = "=2.0.0-pre-rc.9", path = "../data_model" }
+iroha_crypto = { version = "=2.0.0-pre-rc.9", path = "../crypto" }
+iroha_config = { version = "=2.0.0-pre-rc.9", path = "../config" }
+iroha_primitives = { version = "=2.0.0-pre-rc.9", path = "../primitives" }
+eyre = "0.6.8"
+serde = { version = "1.0.159", features = ["derive"] }
+serde_json = { version = "1.0.95", features = ["arbitrary_precision"] }
